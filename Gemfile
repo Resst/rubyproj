@@ -3,12 +3,12 @@ source "https://rubygems.org"
 gem "slim"
 gem "slim-rails"
 gem "haml-rails", "~> 2.1.0"
-gem 'html2haml'
-gem 'haml2slim'
+gem "html2haml"
+gem "haml2slim"
 gem "pg"
-gem 'activerecord-reset-pk-sequence'
+gem "activerecord-reset-pk-sequence"
 gem "bcrypt"
-gem 'active_model_serializers'
+gem "active_model_serializers"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -45,7 +45,18 @@ gem "kamal", require: false
 
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
-
+gem "turbolinks"
+# Use jquery as the JavaScript library
+gem "jquery-ui-rails"
+gem "jquery-rails"
+gem "rails-asset-jqueryui"
+gem "bootstrap"
+gem "dartsass-sprockets"
+gem "sprockets-rails"
+# Pagination
+gem "will_paginate"
+gem "kaminari"
+gem "font-awesome-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

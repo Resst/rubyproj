@@ -5,7 +5,9 @@ Rails.application.configure do
 
   # Make code changes take effect immediately without server restart.
   config.enable_reloading = true
-
+  config.assets.debug = true
+  config.assets.digest = false
+  config.assets.unknown_asset_fallback = true
   # Do not eager load code on boot.
   config.eager_load = false
 

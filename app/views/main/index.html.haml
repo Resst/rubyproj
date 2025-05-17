@@ -1,1 +1,7 @@
 %h1 Main page
+.center.jumbotron
+  %h1 Welcome to the Experteese
+
+  - if signed_in?
+    = link_to "Proceed to work!", work_path,
+ class: "btn btn-lg btn-primary"

@@ -27,17 +27,17 @@
 #       "yes": yup
 #       enabled: "ON"
 
-en:
+ru:
   shared:
     header:
-      logo_title: "Ruby project"
-      home: "Home"
-      help: "Help"
-      sign_in: "Sign in"
-      sign_out: "Sign out"
-      person: "Me"
-      profile: "My page"
-      settings: "Settings"
+      logo_title: "Проект Ruby"
+      home: "Главная"
+      help: "Помощь"
+      sign_in: "Вход"
+      sign_out: "Выход"
+      person: "Я"
+      profile: "Моя страница"
+      settings: "Настройки"
   work:
     index:
-      def_select_theme: "Select theme"
+      def_select_theme: "Выбрать тему"
