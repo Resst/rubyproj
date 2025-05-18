@@ -6,4 +6,4 @@ class Image < ApplicationRecord
     select('id','name','file','ave_value').where(theme_id: theme_id)
   }
 
-  end
+end

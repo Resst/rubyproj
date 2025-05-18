@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  resources :themes
-  resources :images
-  resources :values
-  resources :users
-  resources :posts
-  resources :work
 
   scope "(:locale)", locale: /en|ru/ do
+
+    resources :themes
+    resources :images
+    resources :values
+    resources :users
+    resources :posts
+    resources :work
 
     get "main/index"
     get "main/help"
@@ -20,7 +21,7 @@ Rails.application.routes.draw do
     match "signout", to: "main#index", via: :get
     # work
     match "work", to: "work#index", via: :get
-    match "choose_theme", to: "work#choose_theme", via: :get
+    match "choose_theme", to: "work#choose_theme", via: [:get, :post]
     match "display_theme", to: "work#display_theme", via: :get
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+
+*= require_self
+*= require_tree
+ */
+@import "bootstrap";
+@import "bootstrap-grid";
+@import "bootstrap-utilities";
+@import "bootstrap-reboot";
+.navbar-nav {
+  justify-content: left;
+  float: none;
+  display: inline-block;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex: 1 0 auto;
+}
+.content-center{
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+  height: 100%;           /* Adjust height as needed */
+}
+
+.navbar-default {
+  background: #f8f8f8;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+}
+.nav-el{
+  margin-right: 15px;
+  margin-left: 15px;
+  display: inline-block;
+  float: left;
+}
+
+.nav-el > a > img{
+  height: 30px;
+}
+
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: left;
+}
+
+.nav-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 10px 0;
+}
+
+.footer{
+  background: #f8f8f8;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: left;
+}
+.footer >*{
+  width: 20%;
+}

@@ -1,5 +1,6 @@
 class WorkController < ApplicationController
   def index
+    @themes = Theme.all.pluck(:name)
     @images_count = Image.all.count
     # @selected_theme = "Select theme to leave your answer"
     @selected_theme = t(".def_select_theme")
@@ -7,6 +8,10 @@ class WorkController < ApplicationController
     @values_qty = Value.all.count
     @current_locale = I18n.locale
     session[:selected_theme_id] = @selected_theme # to display nothing
+  end
+
+  def show
+
   end
 
   def choose_theme

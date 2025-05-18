@@ -49,7 +49,7 @@
     <orderEntry type="library" scope="PROVIDED" name="benchmark (v0.4.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v3.1.9, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.18.5, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.18.6, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap (v5.3.5, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="brakeman (v7.0.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.3.0, ruby-3.3.7-p123) [gem]" level="application" />
@@ -85,7 +85,7 @@
     <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v8.0.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.12.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jsonapi-renderer (v0.2.2, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kamal (v2.6.0, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kamal (v2.6.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.2.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.2.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari-activerecord (v1.2.2, ruby-3.3.7-p123) [gem]" level="application" />
@@ -123,10 +123,10 @@
     <orderEntry type="library" scope="PROVIDED" name="puma (v6.6.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="raabro (v1.4.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.14, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-session (v1.0.2, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v3.1.14, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.2.0, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rackup (v1.0.1, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rackup (v2.2.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v8.0.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-asset-jqueryui (v0.0.3, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, ruby-3.3.7-p123) [gem]" level="application" />
@@ -138,15 +138,15 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.10.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.6.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.1, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.75.5, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.75.6, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.44.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.25.0, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.31.0, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.32.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails-omakase (v1.1.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_parser (v3.21.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.4.1, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-embedded (v1.88.0, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-embedded (v1.89.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-embedded (v1.80.4, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.32.0, ruby-3.3.7-p123) [gem]" level="application" />
@@ -156,7 +156,7 @@
     <orderEntry type="library" scope="PROVIDED" name="solid_cable (v3.0.8, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_cache (v1.0.7, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_queue (v1.1.5, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.5, ruby-3.3.7-p123) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.5.2, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.24.0, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.4, ruby-3.3.7-p123) [gem]" level="application" />
@@ -176,7 +176,6 @@
     <orderEntry type="library" scope="PROVIDED" name="uri (v1.0.3, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="useragent (v0.16.11, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.1, ruby-3.3.7-p123) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="webrick (v1.9.1, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.11, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.7, ruby-3.3.7-p123) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-3.3.7-p123) [gem]" level="application" />

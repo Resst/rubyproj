@@ -1,10 +1,13 @@
-%script{src: "work/display_theme.js.erb"}
+
+= javascript_include_tag "work/index"
 .image
   .row
     .col-md-3
 .left_controls
-  .select_theme
-  = render 'work/button_theme_select', locale: @current_locale
+  %select{name: "selector", class: "form-control", onchange: "this.value.startsWith('/themes/') ? applyTheme(this.value) : window.location.href = this.value"}
+    %option{value: ""} Select an option...
+    - @themes.each do |theme|
+      %option{value: "/themes/#{theme}"}= "Apply #{theme} Theme"
 %br
 .col-md-9
   .image_display
@@ -24,7 +27,7 @@
       .col-md-10
         .img-center{:title => "Default image"}
     %img{:alt => "Default Image", :src =>
-      'assets/pictures/raduga5обрез.jpg',
+      asset_path('raduga.jpg'),
        :title => "Default image",
       :style => "width:100%; height:100%;" }
       .image_user_value{:title => "Expert value"}

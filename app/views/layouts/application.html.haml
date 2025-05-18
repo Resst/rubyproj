@@ -12,10 +12,12 @@
     %link{:href => "/icon.png", :rel => "icon", :type => "image/png"}/
     %link{:href => "/icon.svg", :rel => "icon", :type => "image/svg+xml"}/
     %link{:href => "/icon.png", :rel => "apple-touch-icon"}/
-    -# = javascript_include_tag "application"
-    -# = javascript_include_tag "test"
+    = stylesheet_link_tag("application")
+    = stylesheet_link_tag("bootstrap.css")
+    = javascript_include_tag "application"
+    = javascript_include_tag "test"
   %body
     = render 'shared/header'
-    .container
+    .content
       = yield
     = render 'shared/footer'

@@ -50,7 +50,7 @@ gem "turbolinks"
 gem "jquery-ui-rails"
 gem "jquery-rails"
 gem "rails-asset-jqueryui"
-gem "bootstrap"
+gem 'bootstrap', '~> 5.3'
 gem "dartsass-sprockets"
 gem "sprockets-rails"
 # Pagination
