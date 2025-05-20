@@ -1,6 +1,16 @@
 class WorkController < ApplicationController
+  include SessionsHelper
   def index
-    @themes = Theme.all.pluck(:name)
+    if current_user != nil
+      redirect_to controller: :work, action: :show, id: current_user.id
+    else
+      redirect_to signin_path
+    end
+  end
+
+  def show
+    @user_id = params[:id]
+    @themes = Theme.all.pluck(:id, :name)
     @images_count = Image.all.count
     # @selected_theme = "Select theme to leave your answer"
     @selected_theme = t(".def_select_theme")
@@ -8,9 +18,6 @@ class WorkController < ApplicationController
     @values_qty = Value.all.count
     @current_locale = I18n.locale
     session[:selected_theme_id] = @selected_theme # to display nothing
-  end
-
-  def show
 
   end
 

@@ -1,5 +1,8 @@
-%h1 New post
+.center-form
+  .center-form-inside
+    %h1
+      =t('posts.index.new')
 
-= render 'form'
+    = render 'form'
 
-= link_to 'Back', posts_path
+    = link_to t('common.back'), posts_path

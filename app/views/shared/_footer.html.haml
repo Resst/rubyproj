@@ -1,11 +1,12 @@
 .footer
   %ul
-    %li= link_to 'Contacts', main_contacts_path
-    %li= link_to 'Help', main_help_path
-    %li= link_to 'About', main_about_path
+    %li= link_to t('.home'), root_path
+    %li= link_to t('.help'), main_help_path
+    %li= link_to t('.contacts'), main_contacts_path
+    %li= link_to t('.about'), main_about_path
   %ul
-    %li= link_to 'Images', images_path
-    %li= link_to 'Posts', posts_path
-    %li= link_to 'Themes', themes_path
-    %li= link_to 'Users', users_path
-    %li= link_to 'Values', values_path
+    %li= link_to t('.images'), images_path
+    %li= link_to t('.posts'), posts_path
+    %li= link_to t('.themes'), themes_path
+    %li= link_to t('.users'), users_path
+    %li= link_to t('.values'), values_path

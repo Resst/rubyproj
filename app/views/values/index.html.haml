@@ -1,23 +1,31 @@
-%h1 Listing values
+.center-form
+  .center-form-inside
+    %h1
+      =t('.list')
 
-%table
-  %thead
-    %tr
-      %th User
-      %th Image
-      %th
-      %th
-      %th
+    %table
+      %thead
+        %tr
+          %th
+            =t('.user')
+          %th
+            =t('.image')
+          %th
+            =t('.value')
+          %th
+          %th
+          %th
 
-  %tbody
-    - @values.each do |value|
-      %tr
-        %td= value.user.name
-        %td= value.image.name
-        %td= link_to 'Show', value
-        %td= link_to 'Edit', edit_value_path(value)
-        %td= link_to 'Destroy', value, method: :delete, data: { confirm: 'Are you sure?' }
+      %tbody
+        - @values.each do |value|
+          %tr
+            %td= value.user.name
+            %td= value.image.name
+            %td= value.value
+            %td= link_to t('common.show'), value
+            %td= link_to t('common.edit'), edit_value_path(value)
+            %td= link_to t('common.destroy'), value, method: :delete, data: { confirm: 'Are you sure?' }
 
-%br
+    %br
 
-= link_to 'New Value', new_value_path
+    = link_to t('.new'), new_value_path

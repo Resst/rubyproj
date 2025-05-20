@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
 
+
   scope "(:locale)", locale: /en|ru/ do
 
+    match "/api/next_image", to: "application#next_image", via: :get
+    match "/api/get_theme", to: "application#get_theme", via: :get
+    match "/api/get_next_image", to: "application#get_next_image", via: :get
+    match "/api/get_prev_image", to: "application#get_prev_image", via: :get
+    match "/api/get_value_for_image", to: "application#get_value_for_image", via: :get
+    match "/api/set_value", to: "application#set_value", via: [:get, :post]
+    match "/api/login", to: "sessions#create", via: [:post]
+    match "/api/register", to: "sessions#new_user", via: [:post]
+    match "/api/signout", to: "sessions#new_user", via: [:post, :delete]
     resources :themes
     resources :images
     resources :values
@@ -17,8 +27,9 @@ Rails.application.routes.draw do
     root to: "main#index"
 
     match "help", to: "main#help", via: :get
-    match "signin", to: "main#index", via: :get
-    match "signout", to: "main#index", via: :get
+    match "signin", to: "sessions#login", via: :get
+    match "signup", to: "sessions#register", via: :get
+    match "signout", to: "sessions#logout", via: [:get, :delete]
     # work
     match "work", to: "work#index", via: :get
     match "choose_theme", to: "work#choose_theme", via: [:get, :post]

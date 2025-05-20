@@ -28,16 +28,74 @@
 #       enabled: "ON"
 
 ru:
+  main:
+    index:
+      greetings: "Добро пожаловать в мое приложение Ruby On Rails!"
+      work: "Перейти к работе!"
+  common:
+    show: "Показать"
+    edit: "Редактировать"
+    destroy: "Удалить"
+    back: "Назад"
+    save: "Сохранить"
+  images:
+    index:
+      list: "Список изображений"
+      name: "Название"
+      file: "Файл"
+      theme: "Тема"
+      new: "Добавить изображение"
+  posts:
+    index:
+      list: "Список постов"
+      title: "Название"
+      body: "Пост"
+      new: "Новый пост"
+  themes:
+    index:
+      list: "Список тем"
+      name: "Название"
+      new: "Новая тема"
+  users:
+    index:
+      list: "Список пользователей"
+      name: "Имя"
+      email: "Почта"
+      new: "Новый пользователь"
+      work: "К работе"
+  values:
+    index:
+      list: "Список оценок"
+      user: "Пользователь"
+      image: "Изображение"
+      value: "Оценка"
+      new: "Добавить оценку"
+
+
   shared:
     header:
       logo_title: "Проект Ruby"
       home: "Главная"
       help: "Помощь"
+      work: "К работе"
       sign_in: "Вход"
+      sign_up: "Регистрация"
       sign_out: "Выход"
       person: "Я"
       profile: "Моя страница"
       settings: "Настройки"
+    footer:
+      home: "Главная"
+      help: "Помощь"
+      contacts: "Контакты"
+      about: "О нас"
+      images: "Изображения"
+      posts: "Посты"
+      themes: "Темы"
+      users: "Пользователи"
+      values: "Оценки"
   work:
-    index:
+    show:
+      select: "Выбрать тему..."
       def_select_theme: "Выбрать тему"
+      save: "Сохранить"

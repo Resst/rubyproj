@@ -1,6 +1,8 @@
-%p#notice= notice
+.center-form
+  .center-form-inside
+    %p#notice= notice
 
 
-= link_to 'Edit', edit_image_path(@image)
-\|
-= link_to 'Back', images_path
+    = link_to t('common.edit'), edit_image_path(@image)
+    \|
+    = link_to t('common.back'), images_path

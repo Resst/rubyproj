@@ -1,13 +1,15 @@
-.show_user
-  .row
-    %aside.span4
-      %section
-        %h1
-          = gravatar_for @user
-          = @user.name
+.center-form
+  .center-form-inside
+    .show_user
+      .row
+        %aside.span4
+          %section
+            %h1
+              = gravatar_for @user
+              = @user.name
 
-  %p
-    %b= t('.email')
-    = @user.email
+      %p
+        %b= t('users.index.email')
+        = @user.email
 
-  = link_to t('.work'), work_index_path, class: "btn btn-lg btn-primary"
+      = link_to t('users.index.work'), work_index_path, class: "btn btn-lg btn-primary"

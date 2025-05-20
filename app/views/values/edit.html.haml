@@ -1,7 +1,9 @@
-%h1 Editing value
+.center-form
+  .center-form-inside
+    %h1 Editing value
 
-= render 'form'
+    = render 'form'
 
-= link_to 'Show', @value
-\|
-= link_to 'Back', values_path
+    = link_to t('common.show'), @value
+    \|
+    = link_to t('common.back'), values_path

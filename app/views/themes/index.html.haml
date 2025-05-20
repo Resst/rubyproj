@@ -1,23 +1,25 @@
-%h1 Listing themes
+.center-form
+  .center-form-inside
+    %h1
+      =t('.list')
 
-%table
-  %thead
-    %tr
-      %th Name
-      %th Qty items
-      %th
-      %th
-      %th
+    %table
+      %thead
+        %tr
+          %th
+            =t('.name')
+          %th
+          %th
+          %th
 
-  %tbody
-    - @themes.each do |theme|
-      %tr
-        %td= theme.name
-        %td= theme.qty_items
-        %td= link_to 'Show', theme
-        %td= link_to 'Edit', edit_theme_path(theme)
-        %td= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' }
+      %tbody
+        - @themes.each do |theme|
+          %tr
+            %td= theme.name
+            %td= link_to t('common.show'), theme
+            %td= link_to t('common.edit'), edit_theme_path(theme)
+            %td= link_to t('common.destroy'), theme, method: :delete, data: { confirm: 'Are you sure?' }
 
-%br
+    %br
 
-= link_to 'New Theme', new_theme_path
+    = link_to t('.new'), new_theme_path

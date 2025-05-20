@@ -1,28 +1,32 @@
-%h1 Listing images
+.center-form
+  .center-form-inside
+    %h1
+      =t('.list')
 
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
+    %table
+      %thead
+        %tr
+          %th
+          %th
+          %th
 
-  %tbody
-    %tr
-      %th Name
-      %th File
-      %th Ave Value
-      %th Theme Id
-    - @images.each do |image|
-      %tr
-        %td= image.name
-        %td= image.file
-        %td= image.ave_value
-        %td= image.theme_id
-        %td= link_to 'Show', image
-        %td= link_to 'Edit', edit_image_path(image)
-        %td= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' }
+      %tbody
+        %tr
+          %th
+            =t('.name')
+          %th
+            = t('.file')
+          %th
+            = t('.theme')
+        - @images.each do |image|
+          %tr
+            %td= image.name
+            %td= image.file
+            %td= image.theme_id
+            %td= link_to t('common.show'), image
+            %td= link_to t('common.edit'), edit_image_path(image)
+            %td= link_to t('common.destroy'), image, method: :delete, data: { confirm: 'Are you sure?' }
 
-%br
+    %br
 
-= link_to 'New Image', new_image_path
+    = link_to t('.new'), new_image_path

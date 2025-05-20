@@ -1,7 +1,9 @@
-%h1 Editing post
+.center-form
+  .center-form-inside
+    %h1 Editing post
 
-= render 'form'
+    = render 'form'
 
-= link_to 'Show', @post
-\|
-= link_to 'Back', posts_path
+    = link_to t('common.show'), @post
+    \|
+    = link_to t('common.back'), posts_path

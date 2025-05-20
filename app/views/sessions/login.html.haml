@@ -1,0 +1,19 @@
+
+.login-bg
+
+  .login-form
+    %h2 Login
+    = form_with(url: "/api/login?locale=#{I18n.locale}", local: true, class: 'auth-form') do |f|
+      .form-group.login-input
+        = f.label :email, 'Email'
+        = f.email_field :email, class: 'form-control', required: true, placeholder: 'your@email.com'
+
+      .form-group.password-input
+        = f.label :password, 'Password'
+        = f.password_field :password, class: 'form-control', required: true, placeholder: '••••••••'
+
+      .form-actions
+        = f.submit 'Log In', class: 'btn btn-primary'
+
+      - if flash[:alert]
+        .alert.alert-danger= flash[:alert]

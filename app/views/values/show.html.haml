@@ -1,6 +1,8 @@
-%p#notice= notice
+.center-form
+  .center-form-inside
+    %p#notice= notice
 
 
-= link_to 'Edit', edit_value_path(@value)
-\|
-= link_to 'Back', values_path
+    = link_to t('common.edit'), edit_value_path(@value)
+    \|
+    = link_to t('common.back'), values_path

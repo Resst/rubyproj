@@ -1,4 +1,4 @@
-
+%meta#user-id{value: @user_id}
 .image
   .row
     .col-md-3
@@ -11,17 +11,16 @@
           #{@selected_theme}
       .left-controls
         %select{name: "selector", class: "form-control", onchange: "applyTheme(this.value)"}
-          %option{value: ""} Select an option...
+          %option{value: ""}
+            =t('.select')
           - @themes.each do |theme|
             %option{value: theme[0]}= theme[1]
 
 
       .col-md-1
-        .img-left-side
-          %h3{:title => "list to previous image"}
       .col-md-10
         .image-name
-          %h2.up{:title => "Image file name"}
+          %h2#image-name-text.up{:title => "Image file name"}
             #{@selected_image_name}
         .img-center{:title => "Default image"}
           %img{:alt => "Default Image", :src =>
@@ -30,11 +29,16 @@
         .image-user-value{:title => "Expert value"}
           %label Введите свою оценку (1-10):
           %input{type: "number", id: "quantity-input", name: "quantity", min: "1", max: "10", value: "1"}
-          %button{type: "button", onclick: "save_quantity()"} Save
+          %button.btn.btn-lg.btn-primary{type: "button", onclick: "save_quantity()"}
+            =t('.save')
+        .image-switch
+          .img-left-side.img-prev
+            %button.btn.btn-lg.btn-primary{type: "button", onclick: "prev()"} ←
+          .img-page
+            #image-page-text 0/10
+          .img-right-side.img-next
+            %button.btn.btn-lg.btn-primary{type: "button", onclick: "next()"} →
       .col-md-1
-        .img-right-side
-          %h3{:title => "list to next image"}
-            %i.fa.fa-chevron-circle-right
 
 %br
 

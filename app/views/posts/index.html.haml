@@ -1,23 +1,28 @@
-%h1 Listing posts
+.center-form
+  .center-form-inside
+    %h1
+      =t('.list')
 
-%table
-  %thead
-    %tr
-      %th Title
-      %th Body
-      %th
-      %th
-      %th
+    %table
+      %thead
+        %tr
+          %th
+            =t('.title')
+          %th
+            =t('.body')
+          %th
+          %th
+          %th
 
-  %tbody
-    - @posts.each do |post|
-      %tr
-        %td= post.title
-        %td= post.body
-        %td= link_to 'Show', post
-        %td= link_to 'Edit', edit_post_path(post)
-        %td= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+      %tbody
+        - @posts.each do |post|
+          %tr
+            %td= post.title
+            %td= post.body
+            %td= link_to t('common.show'), post
+            %td= link_to t('common.edit'), edit_post_path(post)
+            %td= link_to t('common.destroy'), post, method: :delete, data: { confirm: 'Are you sure?' }
 
-%br
+    %br
 
-= link_to 'New Post', new_post_path
+    = link_to t('.new'), new_post_path

@@ -1,6 +1,8 @@
 .content-center
-  %h1 Welcome To My Ruby On Rails Project!
+  .main-page
+    %h1
+      =t('.greetings')
 
-  - if signed_in?
-    = link_to "Proceed to work!", work_path,
- class: "btn btn-lg btn-primary"
+    .proceed-to-work
+      - if signed_in?
+        = link_to t('.work'), work_index_path,class: "btn btn-lg btn-primary"

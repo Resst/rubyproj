@@ -28,16 +28,73 @@
 #       enabled: "ON"
 
 en:
+  main:
+    index:
+      greetings: "Welcome To My Ruby On Rails Project!"
+      work: "Proceed to work!"
+  common:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+    save: "Save"
+  images:
+    index:
+      list: "Listing Images"
+      name: "Name"
+      file: "File"
+      theme: "Theme Id"
+      new: "New Image"
+  posts:
+    index:
+      list: "Listing Posts"
+      title: "Title"
+      body: "Body"
+      new: "New Post"
+  themes:
+    index:
+      list: "Listing Themes"
+      name: "Name"
+      new: "New Theme"
+  users:
+    index:
+      list: "Listing Users"
+      name: "Name"
+      email: "Email"
+      new: "New User"
+      work: "Work"
+  values:
+    index:
+      list: "Listing Values"
+      user: "User"
+      image: "Image"
+      value: "Value"
+      new: "Add Value"
   shared:
     header:
       logo_title: "Ruby project"
       home: "Home"
       help: "Help"
+      work: "Work"
       sign_in: "Sign in"
+      sign_up: "Sign up"
       sign_out: "Sign out"
       person: "Me"
       profile: "My page"
       settings: "Settings"
+    footer:
+      home: "Home"
+      help: "Help"
+      contacts: "Contacts"
+      about: "About"
+      images: "Images"
+      posts: "Posts"
+      themes: "Themes"
+      users: "Users"
+      values: "Values"
+
   work:
-    index:
+    show:
+      select: "Select theme..."
       def_select_theme: "Select theme"
+      save: "Save"

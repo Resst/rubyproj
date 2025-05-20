@@ -85,3 +85,74 @@ body {
 .footer >*{
   width: 20%;
 }
+
+.img-center > img{
+  height: 100%;
+}
+
+.img-center{
+  display: flex;
+  justify-content: center;
+  height: 60%;
+}
+.left-controls{
+  padding: 1em;
+}
+.image-display{
+  padding: 1em;
+}
+.image-name{
+  display: flex;
+  padding: 1em;
+}
+.image-user-value{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-user-value>*{
+  margin: 1em;
+}
+.image-switch{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-switch>*{
+  margin: 1em
+}
+.image-user-value{
+  display: flex;
+  justify-content: center;
+}
+.proceed-to-work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.login-form>form>*{
+  margin-top: 1em;
+}
+.center-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.img-page{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

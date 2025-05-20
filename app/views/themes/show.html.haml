@@ -1,6 +1,8 @@
-%p#notice= notice
+.center-form
+  .center-form-inside
+    %p#notice= notice
 
 
-= link_to 'Edit', edit_theme_path(@theme)
-\|
-= link_to 'Back', themes_path
+    = link_to t('common.edit'), edit_theme_path(@theme)
+    \|
+    = link_to t('common.back'), themes_path
